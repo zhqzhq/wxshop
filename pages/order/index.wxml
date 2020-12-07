@@ -1,0 +1,1 @@
+<tabs tabs="{{tabs}}" bindtabsitemchange="handletabsitemchange">11</tabs>
