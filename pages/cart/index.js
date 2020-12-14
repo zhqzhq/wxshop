@@ -1,6 +1,6 @@
 // pages/cart/index.js
 import { getSetting, chooseAddress, openSetting, showModal ,showToast} from "../../utils/asyncWx.js";
-import regeneratorRuntime from '../../lib/runtime/runtime';
+import regeneratorRuntime from "../../lib/runtime/runtime";
 Page({
   data: {
     address:{},
@@ -8,7 +8,6 @@ Page({
     allChecked:false,
     totalPrice:0,
     totalNum:0
-
   },
   onShow(){
     const address=wx.getStorageSync("address");
@@ -58,7 +57,7 @@ async handleChooseAddress() {
 //   2 获取到被修改的商品对象
 //   3 商品对象的选中状态 取反
 //   4 重新填充回data中和缓存中
-//   5 重新计算全选。总价格 总数量。。。
+//   5 重新计算全选。总价格 总数量。
 handeItemChange(e){
   const goods_id=e.currentTarget.dataset.id;
   const {cart}=this.data;

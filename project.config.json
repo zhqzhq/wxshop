@@ -96,6 +96,12 @@
           "pathName": "pages/order/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

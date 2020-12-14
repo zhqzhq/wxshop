@@ -71,9 +71,7 @@ export const getSetting=()=>{
         fail: () => {
           reject(err);
         },
-      });
-        
-
+      });   
     })
   }
  

@@ -50,7 +50,10 @@ Page({
    */
   onLoad: function (options) {
     const {cid}=options
-    this.queryinfo.cid=cid
+    const {query}=options
+    this.queryinfo.cid=cid||"",
+    this.queryinfo.query=query||"",
+    
     this.getgoodslist();
 
   },
